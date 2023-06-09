@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+:root {
+  --font-title: 'Quicksand', sans-serif;
+  --font-content: 'Quicksand', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+
+  --foreground-light: rgba(27,27,27,1);
+  --foreground-dark: rgba(169,169,169,1);
+  --foreground-accent: rgba(22,22,22,1);
+  --foreground-link-light: rgba(135,114,107,1);
+  --foreground-link-light-hover: rgba(81,68,64,1);
+  --foreground-link-dark: rgba(216,204,200,1);
+  --foreground-link-dark-hover: rgba(216,204,200,1);
+  --foreground-button-light: rgba(27,27,27,1);
+  --foreground-button-light-hover: rgba(255,255,255,1);
+  --foreground-button-dark: rgba(169,169,169,1);
+  --foreground-button-dark-hover: rgba(27,27,27,1);
+  --foreground-button-accent: rgba(22,22,22,1);
+  --foreground-button-accent-hover: rgba(255,255,255,1);
+
+  --background-light: rgba(255,255,255,1);
+  --background-dark: rgba(51,51,51,1);
+  --background-accent: rgba(216,204,200,1);
+  --background-link-light: rgba(0,0,0,0);
+  --background-link-light-hover: rgba(0,0,0,0);
+  --background-link-dark: rgba(0,0,0,0);
+  --background-link-dark-hover: rgba(0,0,0,0);
+  --background-button-light: rgba(0,0,0,0);
+  --background-button-light-hover: rgba(0,0,0,1);
+  --background-button-dark: rgba(0,0,0,0);
+  --background-button-dark-hover: rgba(255,255,255,1);
+  --background-button-accent: rgba(0,0,0,0);
+  --background-button-accent-hover: rgba(0,0,0,1);
+}
