@@ -40,12 +40,12 @@ body > header {
   margin: 0; padding: 0;
   background: var(--background-dark);
   color: var(--foreground-dark);
-  font-size: 1.333em;
+  font-size: 3vh;
   font-family: var(--font-title);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
-  line-height: 10vh;
+  line-height: 2.8em;
 }
 body > main {
   display: flex;
@@ -73,12 +73,12 @@ body > footer {
   text-transform: uppercase;
 }
 main > header {
-  height: 82vh;
+  height: 40vh;
   width: 100%;
   background-color: var(--background-accent);
   background-image: url('assets/jumbotron.jpg');
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: cover;
 }
 nav {
@@ -112,9 +112,9 @@ nav > ul > li > a, nav > ul > li > a:visited, nav > ul > li > a:active, nav > ul
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.889em;
+  font-size: 2vmin;
   letter-spacing: .2em;
-  line-height: 8vh;
+  line-height: 4em;
 }
 nav > ul > li > a:hover {
   background: var(--background-button-accent-hover);
@@ -175,12 +175,12 @@ body > header a:hover, body > header a:active {
   text-decoration: none;
 }
 
-@media screen and (max-width: 67.5rem) {
+@media (max-aspect-ratio: 9/8) {
   main {
     min-width: 0;
   }
   main > header {
-    height: 30vh;
+    height: 10vh;
   }
   section {
     width: 100%;
@@ -208,25 +208,21 @@ body > header a:hover, body > header a:active {
     justify-content: center;
     align-items: flex-start;
   }
-  nav > i {
-    width: 6vh;
-    height: 6vh;
-    background-image: url('assets/menu-icon.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   nav > ul {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: center;
   }
   nav > ul > li {
     flex-direction: column;
+    border: 1px solid var(--foreground-button-accent);
+    margin: .25vmin .5vmin;
   }
-  nav:focus-within > ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    text-align: center;
+  nav > ul > li > a, nav > ul > li > a:visited, nav > ul > li > a:active, nav > ul > li > a:hover {
+    line-height: 3em;
+    font-size: 2.5rem;
   }
 }
