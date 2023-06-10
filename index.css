@@ -266,3 +266,25 @@ img {
     height: 12.5vh;
   }
 }
+
+@media (max-aspect-ratio: 11/17) {
+  nav > ul > li > a,
+  nav > ul > li > a:hover,
+  nav > ul > li > a:active,
+  nav > ul > li > a:visited {
+    font-size: 1.25rem;
+    line-height: 3em;
+    width: 12.5em;
+  }
+}
+
+@media (max-aspect-ratio: 7/17) {
+  nav > ul > li > a,
+  nav > ul > li > a:hover,
+  nav > ul > li > a:active,
+  nav > ul > li > a:visited {
+    font-size: 1rem;
+    line-height: 3em;
+    width: 12.5em;
+  }
+}
